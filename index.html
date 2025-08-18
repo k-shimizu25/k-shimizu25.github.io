@@ -4,12 +4,80 @@
   <meta charset="UTF-8">
   <title>清水 康希 - 研究者ホームページ</title>
   <style>
-    body { font-family: sans-serif; max-width: 800px; margin: auto; line-height: 1.6; }
-    header { text-align: center; padding: 20px; }
-    h1 { margin-bottom: 0; }
-    nav a { margin: 0 10px; text-decoration: none; color: #0366d6; }
-    section { margin-top: 30px; }
-    footer { margin-top: 40px; text-align: center; font-size: small; color: gray; }
+    body {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      max-width: 900px;
+      margin: auto;
+      line-height: 1.8;
+      background-color: #fafafa;
+      color: #222;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px 20px;
+      border-bottom: 4px solid #0366d6;
+    }
+    h1 {
+      margin-bottom: 5px;
+      font-size: 2.4em;
+      color: #0366d6;
+    }
+    header p {
+      margin: 0;
+      font-size: 1.1em;
+      color: #555;
+    }
+    nav {
+      margin-top: 15px;
+    }
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #0366d6;
+      font-weight: bold;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: #023f88;
+    }
+    section {
+      margin: 40px 0;
+      padding: 25px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    }
+    h2 {
+      border-left: 6px solid #0366d6;
+      padding-left: 12px;
+      color: #0366d6;
+      font-size: 1.6em;
+      margin-top: 0;
+    }
+    h3 {
+      margin-top: 20px;
+      color: #333;
+    }
+    ul, ol {
+      padding-left: 25px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 0.9em;
+      color: gray;
+      padding: 20px 0;
+      border-top: 1px solid #ddd;
+    }
+    a {
+      color: #0366d6;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -17,9 +85,9 @@
     <h1>清水 康希 (Koki Shimizu)</h1>
     <p>東京理科大学 理学部第一部 応用数学科 助教</p>
     <nav>
-      <a href="#profile">プロフィール</a> |
-      <a href="#publications">研究業績</a> |
-      <a href="#teaching">教育活動</a> |
+      <a href="#profile">プロフィール</a>
+      <a href="#publications">研究業績</a>
+      <a href="#teaching">教育活動</a>
       <a href="#contact">連絡先</a>
     </nav>
   </header>
@@ -27,6 +95,7 @@
   <section id="profile">
     <h2>プロフィール</h2>
     <p>専門：多変量解析，ランダム行列理論，機械学習<br>
+       関心：深層学習の理論解析，統計的推測</p>
 
     <h3>職歴</h3>
     <ul>
@@ -43,50 +112,34 @@
 
   <section id="publications">
     <h2>研究業績（論文）</h2>
-    <ul>
-<ol>
-  <li>Approximate distribution of eigenvalues of a generalized Wishart matrix under an extended Gaussian model,  
-      Koki Shimizu, Hiroki Hashiguchi; <i><strong>Statistics and Probability Letters</strong></i>, accepted.</li>
-  
-  <li>Chi-Square Approximation for the Distribution of Individual Eigenvalues of a Singular Wishart Matrix,  
-      Koki Shimizu, Hiroki Hashiguchi; <i><strong>Mathematics</strong></i>, 2024.</li>
-
-  <li>Asymptotic behavior of the distributions of eigenvalues for beta-Wishart ensemble under the dispersed population eigenvalues,  
-      Ryo Nasuda, Koki Shimizu, Hiroki Hashiguchi; <i><strong>Communications in Statistics – Theory and Methods</strong></i>, 2023.</li>
-
-  <li>Numerical computation for the exact distribution of Roy's largest root statistic under linear alternative,  
-      Koki Shimizu, Hiroki Hashiguchi; <i><strong>Japanese Journal of Statistics and Data Science</strong></i>, 2022.</li>
-
-  <li>Generalized heterogeneous hypergeometric functions and the distribution of the largest eigenvalue of an elliptical Wishart matrix,  
-      Aya Shinozaki, Koki Shimizu, Hiroki Hashiguchi; <i><strong>Random Matrices-Theory and Applications</strong></i>, 2022.</li>
-
-  <li>Algorithm for the product of Jack polynomials and its application to the sphericity test,  
-      Koki Shimizu, Hiroki Hashiguchi; <i><strong>Statistics & Probability Letters</strong></i>, 2022.</li>
-
-  <li>Expressing the largest eigenvalue of a singular beta F-matrix with heterogeneous hypergeometric functions,  
-      Koki Shimizu, Hiroki Hashiguchi; <i><strong>Random Matrices-Theory and Applications</strong></i>, 2022.</li>
-
-  <li>Heterogeneous hypergeometric functions with two matrix arguments and the exact distribution of the largest eigenvalue of a singular beta-Wishart matrix,  
-      Koki Shimizu, Hiroki Hashiguchi; <i><strong>Journal of Multivariate Analysis</strong></i>, 2021.</li>
-</ol>
+    <ol>
+      <li>Koki Shimizu, Hiroki Hashiguchi, Approximate distribution of eigenvalues of a generalized Wishart matrix under an extended Gaussian model, <i><strong>Statistics and Probability Letters</strong></i>, accepted.</li>
+      <li>Koki Shimizu, Hiroki Hashiguchi, Chi-Square Approximation for the Distribution of Individual Eigenvalues of a Singular Wishart Matrix, <i><strong>Mathematics</strong></i>, 2024.</li>
+      <li>Ryo Nasuda, Koki Shimizu, Hiroki Hashiguchi, Asymptotic behavior of the distributions of eigenvalues for beta-Wishart ensemble under the dispersed population eigenvalues, <i><strong>Communications in Statistics – Theory and Methods</strong></i>, 2023.</li>
+      <li>Koki Shimizu, Hiroki Hashiguchi, Numerical computation for the exact distribution of Roy's largest root statistic under linear alternative, <i><strong>Japanese Journal of Statistics and Data Science</strong></i>, 2022.</li>
+      <li>Aya Shinozaki, Koki Shimizu, Hiroki Hashiguchi, Generalized heterogeneous hypergeometric functions and the distribution of the largest eigenvalue of an elliptical Wishart matrix, <i><strong>Random Matrices-Theory and Applications</strong></i>, 2022.</li>
+      <li>Koki Shimizu, Hiroki Hashiguchi, Algorithm for the product of Jack polynomials and its application to the sphericity test, <i><strong>Statistics & Probability Letters</strong></i>, 2022.</li>
+      <li>Koki Shimizu, Hiroki Hashiguchi, Expressing the largest eigenvalue of a singular beta F-matrix with heterogeneous hypergeometric functions, <i><strong>Random Matrices-Theory and Applications</strong></i>, 2022.</li>
+      <li>Koki Shimizu, Hiroki Hashiguchi, Heterogeneous hypergeometric functions with two matrix arguments and the exact distribution of the largest eigenvalue of a singular beta-Wishart matrix, <i><strong>Journal of Multivariate Analysis</strong></i>, 2021.</li>
+    </ol>
   </section>
 
   <section id="teaching">
     <h2>教育活動</h2>
-      <ul>
-    <li>2025年4月 – 2025年9月：データ分析入門（専修大学）</li>
-    <li>2024年9月 – 2025年3月：データサイエンス演習（流通経済大学）</li>
-    <li>2024年4月 – 現在：応用数学入門（東京理科大学）</li>
-    <li>2023年9月 – 現在：プログラミング基礎 II 及び演習（東京理科大学）</li>
-    <li>2023年9月 – 現在：線形代数 II 及び演習（東京理科大学）</li>
-    <li>2023年4月 – 現在：プログラミング基礎 I 及び演習（東京理科大学）</li>
-    <li>2023年4月 – 現在：線形代数 I 及び演習（東京理科大学）</li>
-  </ul>
+    <ul>
+      <li>2025年4月 – 2025年9月：データ分析入門（専修大学）</li>
+      <li>2024年9月 – 2025年3月：データサイエンス演習（流通経済大学）</li>
+      <li>2024年4月 – 現在：応用数学入門（東京理科大学）</li>
+      <li>2023年9月 – 現在：プログラミング基礎 II 及び演習（東京理科大学）</li>
+      <li>2023年9月 – 現在：線形代数 II 及び演習（東京理科大学）</li>
+      <li>2023年4月 – 現在：プログラミング基礎 I 及び演習（東京理科大学）</li>
+      <li>2023年4月 – 現在：線形代数 I 及び演習（東京理科大学）</li>
+    </ul>
   </section>
 
   <section id="contact">
     <h2>連絡先</h2>
-    <p>Email: <a href="mailto:xxxx@rs.tus.ac.jp">k-@rs.tus.ac.jp</a><br>
+    <p>Email: <a href="mailto:xxxx@rs.tus.ac.jp">xxxx@rs.tus.ac.jp</a><br>
        所属: 東京理科大学 理学部第一部 応用数学科<br>
        住所: 東京都新宿区神楽坂1-3</p>
   </section>
