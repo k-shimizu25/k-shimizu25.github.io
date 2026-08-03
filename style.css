@@ -407,6 +407,23 @@ ol.pub-list li::before {
 }
 ol.pub-list li.hide { display: none; }
 ol.pub-list li .venue { color: var(--ink); font-weight: 600; font-style: italic; }
+ol.pub-list[data-group="talk"]:not(.expanded) li:nth-child(n+6) { display: none; }
+
+.show-more-btn {
+  display: block;
+  margin: 8px auto 0;
+  font-family: inherit;
+  font-size: 0.85em;
+  font-weight: 600;
+  color: var(--navy);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  padding: 10px 24px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.show-more-btn:hover { background: var(--navy); color: #fff; border-color: var(--navy); }
 
 /* two-col card grid */
 .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }

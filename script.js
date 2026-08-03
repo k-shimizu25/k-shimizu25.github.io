@@ -22,9 +22,23 @@ const searchBox = document.getElementById('pubSearch');
 const pubCount = document.getElementById('pubCount');
 let activeFilter = 'all';
 
+const talkList = document.querySelector('ol.pub-list[data-group="talk"]');
+const talkToggle = document.getElementById('talkToggle');
+const talkCount = talkList ? talkList.querySelectorAll('li').length : 0;
+if (talkToggle && talkList) {
+  talkToggle.addEventListener('click', () => {
+    const expanded = talkList.classList.toggle('expanded');
+    talkToggle.textContent = expanded ? '学会発表を閉じる' : `学会発表をすべて表示（${talkCount}件）`;
+  });
+}
+
 function applyPubFilter() {
   if (!searchBox) return;
   const query = searchBox.value.trim().toLowerCase();
+  if (query && talkList && !talkList.classList.contains('expanded')) {
+    talkList.classList.add('expanded');
+    if (talkToggle) talkToggle.textContent = '学会発表を閉じる';
+  }
   let visible = 0;
   document.querySelectorAll('.pub-list').forEach(list => {
     const group = list.dataset.group;
