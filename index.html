@@ -1,365 +1,224 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="google-site-verification" content="WMJbZHJ3-68p_FXaTMVckSMUtwwfEB0ngeRvzXnd38c" />
-  <title>清水 康希 - 研究者ホームページ</title>
-  <style>
-    body {
-      font-family: "Helvetica Neue", Arial, sans-serif;
-      max-width: 900px;
-      margin: auto;
-      line-height: 1.8;
-      background-color: #fafafa;
-      color: #222;
-    }
-    header {
-      text-align: center;
-      padding: 40px 20px 20px;
-      border-bottom: 4px solid #0366d6;
-    }
-    h1 {
-      margin-bottom: 5px;
-      font-size: 2.4em;
-      color: #0366d6;
-    }
-    header p {
-      margin: 0;
-      font-size: 1.1em;
-      color: #555;
-    }
-    nav {
-      margin-top: 15px;
-    }
-    nav a {
-      margin: 0 12px;
-      text-decoration: none;
-      color: #0366d6;
-      font-weight: bold;
-      transition: color 0.2s;
-    }
-    nav a:hover {
-      color: #023f88;
-    }
-    section {
-      margin: 40px 0;
-      padding: 25px;
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
-    }
-    h2 {
-      border-left: 6px solid #0366d6;
-      padding-left: 12px;
-      color: #0366d6;
-      font-size: 1.6em;
-      margin-top: 0;
-    }
-    h3 {
-      margin-top: 20px;
-      color: #333;
-    }
-    ul, ol {
-      padding-left: 25px;
-    }
-    li {
-      margin-bottom: 10px;
-    }
-    footer {
-      margin-top: 50px;
-      text-align: center;
-      font-size: 0.9em;
-      color: gray;
-      padding: 20px 0;
-      border-top: 1px solid #ddd;
-    }
-    a {
-      color: #0366d6;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="WMJbZHJ3-68p_FXaTMVckSMUtwwfEB0ngeRvzXnd38c" />
+<title>清水 康希 | Koki Shimizu — 研究者ホームページ</title>
+<meta name="description" content="清水康希（東京理科大学 理学部第一部 応用数学科 助教）の研究者ホームページ。多変量解析、ランダム行列理論、機械学習を専門とする。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>清水 康希 (Koki Shimizu)</h1>
-    <p>東京理科大学 理学部第一部 応用数学科 助教</p>
-    <nav>
-      <a href="#profile">プロフィール</a>
-      <a href="#research">研究業績</a>
-      <a href="#teaching">教育活動</a>
-      <a href="#grants">競争的資金</a>
-      <a href="#others">その他</a>
-      <a href="#contact">連絡先</a>
-    </nav>
+  <div id="progress"></div>
+
+  <header class="hero">
+    <div class="bg-photo"></div>
+    <div class="bg-overlay"></div>
+    <div class="hero-inner">
+      <h1 class="serif">清水 康希<span class="en">Koki Shimizu</span></h1>
+      <p class="role">東京理科大学 理学部第一部 応用数学科 助教</p>
+    </div>
   </header>
 
-  <section id="profile">
-    <h2>プロフィール</h2>
-     <h3>学位</h3>
-    <li><p>博士（理学）</li>
+  <nav class="subnav" id="subnav">
+    <a href="#profile">プロフィール</a>
+    <a href="research-intro.html">研究紹介</a>
+    <a href="#research">研究業績</a>
+    <a href="#teaching">教育活動</a>
+    <a href="#grants">競争的資金</a>
+    <a href="#others">その他</a>
+    <a href="#contact">連絡先</a>
+    <button id="themeToggle" aria-label="ダークモード切り替え">🌙</button>
+  </nav>
 
-    <h3>専門</h3>
-    <li>多変量解析，ランダム行列理論，機械学習</li>
+  <main>
 
-    <h3>職歴</h3>
-    <ul>
-      <li>2022.04–2023.03：日本学術振興会 特別研究員（DC2, PD）</li>
-      <li>2023.04–現在：東京理科大学 助教</li>
-    </ul>
-    <h3>研究内容</h3>
-  <p>
-    多変量解析の統計的推測理論について研究しています。特に、遺伝子データでよく見られるサンプルサイズよりも変数の数の方が大きいデータを解析するための方法の開発に力を入れています。このようなデータに対しては、大標本漸近理論に基づく従来の統計手法の適用が困難であるため、新しい手法の開発が必要とされています。多変量分散分析、正準相関分析、主成分分析などについて、統計量の正確分布や近似分布の導出に取り組んでいます。この研究は、「数理統計学」と「行列論」が融合する分野であるランダム行列理論と密接に関連しています。ランダム行列理論の応用範囲は多岐にわたっており、深層学習への応用についての研究も行っています。
-  </p>
-  </section>
+    <section id="profile">
+      <div class="eyebrow">01 &nbsp;Profile</div>
+      <h2 class="serif">プロフィール</h2>
 
-  <section id="research">
-    <h2>研究業績</h2>
-    <h3>論文（査読なし）</h3>
-    <ol>
-      <li>Kohei Nishikawa, Koki Shimizu, Hiroki Hashiguchi, Evaluating of Singular Value Threshold for DNN Weight Matrices based on Random Matrix Theory, <i><strong>manuscript in preparation</strong></i>, 2025.</li>
-      <li>Koki Shimizu, Hiroki Hashiguchi,  Exact Distribution of the Noncentral Complex Roy's Largest Root Statistic via Pieri's Formula,  <i><strong>arXiv preprint</strong></i>, arXiv:2507.21508, 2025.</li>
-    </ol>
-    <h3>論文（査読あり）</h3>
-<ol>
-  <li>
-    Koki Shimizu, Hiroki Hashiguchi,
-    Approximate distribution of eigenvalues of a generalized Wishart matrix under an extended Gaussian model,
-    <i><strong>Statistics and Probability Letters</strong></i>, <b>227</b>, 120535, 2026.
-  </li>
-  <li>
-    Manami Tsunoi, Manabu Takiguchi, Emi Ashida, Kazuki Harada, Keita Iyori, Koki Shimizu,
-    Antiseptic Susceptibility Profiles of Canine Pyoderma-associated Staphylococci in Japan: First Identification of Plasmid-borne smr in <i>Staphylococcus coagulans</i>,
-    <i><strong>Frontiers in Veterinary Science</strong></i>, section Veterinary Epidemiology and Economics, 12, 2025.
-  </li>
-  <li>
-    Koki Shimizu, Hiroki Hashiguchi,
-    Chi-Square Approximation for the Distribution of Individual Eigenvalues of a Singular Wishart Matrix,
-    <i><strong>Mathematics</strong></i>, <b>12</b>(6), 921, 2024.
-  </li>
-  <li>
-    Ryo Nasuda, Koki Shimizu, Hiroki Hashiguchi,
-    Asymptotic behavior of the distributions of eigenvalues for beta-Wishart ensemble under the dispersed population eigenvalues,
-    <i><strong>Communications in Statistics – Theory and Methods</strong></i>, <b>52</b>(22), 7840–7860, 2023.
-  </li>
-  <li>
-    Koki Shimizu, Hiroki Hashiguchi,
-    Numerical computation for the exact distribution of Roy's largest root statistic under linear alternative,
-    <i><strong>Japanese Journal of Statistics and Data Science</strong></i>, <b>5</b>, 701–715, 2022.
-  </li>
-  <li>
-    Aya Shinozaki, Koki Shimizu, Hiroki Hashiguchi,
-    Generalized heterogeneous hypergeometric functions and the distribution of the largest eigenvalue of an elliptical Wishart matrix,
-    <i><strong>Random Matrices: Theory and Applications</strong></i>, <b>11</b>(1), 2250034, 2022.
-  </li>
-  <li>
-    Koki Shimizu, Hiroki Hashiguchi,
-    Algorithm for the product of Jack polynomials and its application to the sphericity test,
-    <i><strong>Statistics & Probability Letters</strong></i>, <b>187</b>, 109505, 2022.
-  </li>
-  <li>
-    Koki Shimizu, Hiroki Hashiguchi,
-    Expressing the largest eigenvalue of a singular beta F-matrix with heterogeneous hypergeometric functions,
-    <i><strong>Random Matrices: Theory and Applications</strong></i>, <b>11</b>(1), 2250005, 2022.
-  </li>
-  <li>
-    Koki Shimizu, Hiroki Hashiguchi,
-    Heterogeneous hypergeometric functions with two matrix arguments and the exact distribution of the largest eigenvalue of a singular beta-Wishart matrix,
-    <i><strong>Journal of Multivariate Analysis</strong></i>, <b>183</b>, 104714, 2021.
-  </li>
-</ol>
+      <h3>学位</h3>
+      <p>博士（理学）</p>
 
-<h3>学会発表</h3>
-<ol>
-  <li>
-    任欣穎, 清水康希, 橋口博樹,
-    行列変量混合正規分布のパラメータ推定について
-    日本計算機統計学会 第39回大会, 2025年6月13日
-  </li>
-  <li>
-    橋口博樹, 清水康希, 小野陽子,
-    ゾーナル多項式の有限和で表現できる分布について
-    日本計算機統計学会 第39回大会, 2025年6月13日
-  </li>
-  <li>
-    大橋佑生, 清水康希, 橋口博樹,
-    シングルセルデータのデトーニングを活用した次元削減
-    日本計算機統計学会 第39回大会, 2025年6月13日
-  </li>
-  <li>
-    西川晃平, 清水康希, 橋口博樹,
-    ランダム行列理論に基づくDNN重み行列の低ランク近似に対する評価法の提案
-    人工知能学会全国大会（第39回）, 2025年5月27日〜30日
-  </li>
-  <li>
-    角井真名美, 滝口学, 芦田恵美, 伊從慶太, 清水康希,
-    消毒評価のための犬膿皮症由来ブドウ球菌のスクリーニングとqacC陽性
-    <i>Staphylococcus coagulans</i> の全ゲノム解析
-    日本分子生物学会年会（第47回）, 2024年11月29日
-  </li>
-  <li>
-    岩﨑拓海, 清水康希, 橋口博樹,
-    最大・最小固有値の比の正確分布とその数値計算
-    日本計算機統計学会 第38回シンポジウム, 2024年10月25日
-  </li>
-  <li>
-    西川晃平, 清水康希, 橋口博樹,
-    深層学習におけるランダム行列理論に基づく重み行列の低ランク近似の評価
-    日本計算機統計学会 第38回シンポジウム, 2024年10月25日
-  </li>
-  <li>
-    為我井優, 清水康希, 橋口博樹,
-    ホワイトウィシャート行列の最小固有値分布のパフィアン表現
-    日本計算機統計学会 第37回シンポジウム, 2023年11月12日
-  </li>
-  <li>
-    堺翔太, 清水康希, 橋口博樹,
-    行列変量ラゲール多項式の数値計算について
-    日本計算機統計学会 第37回シンポジウム, 2023年11月12日
-  </li>
-  <li>
-    Koki Shimizu, Hiroki Hashiguchi,
-    Distribution of eigenvalues of a singular elliptical Wishart matrix
-    The 10th International Congress on Industrial and Applied Mathematics (ICIAM 2023),
-    August 23, 2023
-  </li>
-  <li>
-    清水康希, 橋口博樹,
-    特異ウィシャート行列の固有値分布のカイ二乗近似
-    日本計算機統計学会 第37回大会, 2023年6月3日
-  </li>
-  <li>
-    清水康希, 橋口博樹,
-    ゾーナル多項式の積計算とその統計的検定への応用について
-    応用統計学会, 2023年4月22日
-  </li>
-  <li>
-    清水康希,
-    ジャック多項式計算の固有値分布論への応用
-    神戸可積分セミナー, 2023年1月26日
-  </li>
-  <li>
-    清水康希, 橋口博樹,
-    多変量分散分析における対立仮説のもとでのRoyの最大固有値統計量の正確分布
-    日本計算機統計学会 第36回シンポジウム, 2022年11月26日
-  </li>
-  <li>
-    清水康希, 橋口博樹,
-    特異ウィシャート行列の固有値の正確分布論
-    科研費シンポジウム, 2022年10月29日
-  </li>
-  <li>
-    清水康希,
-    Distribution theory of eigenvalues for a singular beta-Wishart matrix
-    第14回統計科学セミナー, 2022年7月14日
-  </li>
-  <li>
-    Shimizu, K., Hashiguchi, H.,
-    Algorithm for product of zonal polynomials and its application in statistics
-    IASC-ARS2022, February 22, 2022
-  </li>
-  <li>
-    清水康希, 橋口博樹,
-    特異・非特異のウィシャート行列に関する最大固有値分布の統一的表現
-    応用統計学会, 2021年5月15日
-  </li>
-  <li>
-    清水康希,
-    行列変数の非斉次超幾何関数による固有値分布の導出とその数値計算
-    確率・統計・行列ワークショップ 松本 2020, 2020年12月4日
-  </li>
-  <li>
-    清水康希, 橋口博樹,
-    非斉次超幾何関数を用いた特異ベータウィシャート行列の固有値分布論とその応用
-    統計関連連合大会, 2020年9月9日
-  </li>
-  <li>
-    篠崎絢, 清水康希, 橋口博樹,
-    特異楕円ウィシャート行列の固有値の分布について
-    日本計算機統計学会 第34回大会, 2020年5月30日
-  </li>
-  <li>
-    那須田亮, 清水康希, 橋口博樹,
-    Beta-Wishart ensembleにおける固有値のガンマ分布近似
-    日本計算機統計学会 第33回シンポジウム, 2019年11月30日
-  </li>
-  <li>
-    橋口博樹, 清水康希,
-    特異ベータウィシャート行列に関する固有値の分布論について
-    統計数理研究所, 2019年11月11日
-  </li>
-  <li>
-    Shimizu, Koki, Hashiguchi, Hiroki, Iwashita, Toshiya,
-    Exact and approximate distributions of the largest eigenvalues of singular Wishart matrix
-    DAGSTAT 2019, March 18, 2019
-  </li>
-  <li>
-    清水康希, 橋口博樹, 岩下登志也,
-    特異ウィシャート行列の最大・最小固有値分布について
-    科研費シンポジウム, 2018年12月3日
-  </li>
-  <li>
-    Shimizu, Koki, Hashiguchi, Hiroki, Iwashita, Toshiya,
-    Approximate distributions of eigenvalues of singular Wishart matrix
-    Statistical Computing: Challenges and Opportunities in Data Science, November 11, 2018
-  </li>
-</ol>
-  </section>
+      <h3>専門</h3>
+      <div class="badge-row">
+        <span class="badge">多変量解析</span>
+        <span class="badge">ランダム行列理論</span>
+        <span class="badge">機械学習</span>
+      </div>
 
-  <section id="teaching">
-    <h2>教育活動</h2>
-    <ul>
-      <li>2025年9月 – 2026年3月：情報統計学（日本女子大学）</li>
-      <li>2025年4月 – 2025年9月：データ分析入門（専修大学）</li>
-      <li>2024年9月 – 2025年3月：データサイエンス演習（流通経済大学）</li>
-      <li>2024年4月 – 現在：応用数学入門（東京理科大学）</li>
-      <li>2023年9月 – 現在：プログラミング基礎 2 及び演習（東京理科大学）</li>
-      <li>2023年9月 – 現在：線形代数 2 及び演習（東京理科大学）</li>
-      <li>2023年4月 – 現在：プログラミング基礎 1 及び演習（東京理科大学）</li>
-      <li>2023年4月 – 現在：線形代数 1 及び演習（東京理科大学）</li>
-    </ul>
-  </section>
-<section id="grants">
-  <h2>競争的資金</h2>
-  <ul>
-    <li>高次元多変量解析における固有値分布論の展開
-        日本学術振興会 科学研究費助成事業 若手研究（2025年4月 – 2028年3月, 代表: 清水 康希）</li>
-    <li>特異ランダム行列の固有値分布論の発展とその統計的応用
-        日本学術振興会 科学研究費助成事業 研究活動スタート支援（2023年8月 – 2025年3月, 代表: 清水 康希）</li>
-    <li>多変量解析に関する特異ランダム行列の固有値分布論の新展開
-        日本学術振興会 科学研究費助成事業 特別研究員奨励費（2022年4月 – 2024年3月, 代表: 清水 康希）</li>
-  </ul>
-</section>
+      <h3>職歴</h3>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="when">2022.04 – 2023.03</div>
+          <div class="what">日本学術振興会 特別研究員（DC2, PD）</div>
+        </div>
+        <div class="timeline-item">
+          <div class="when">2023.04 – 現在</div>
+          <div class="what">東京理科大学 助教</div>
+        </div>
+      </div>
 
-<section id="others">
-  <h2>その他</h2>
+      <h3>研究内容</h3>
+      <div class="lead-card">
+        <p style="margin:0;">
+          多変量解析の統計的推測理論について研究しています。特に、遺伝子データでよく見られるサンプルサイズよりも変数の数の方が大きいデータを解析するための方法の開発に力を入れています。このようなデータに対しては、大標本漸近理論に基づく従来の統計手法の適用が困難であるため、新しい手法の開発が必要とされています。多変量分散分析、正準相関分析、主成分分析などについて、統計量の正確分布や近似分布の導出に取り組んでいます。この研究は、「数理統計学」と「行列論」が融合する分野であるランダム行列理論と密接に関連しています。ランダム行列理論の応用範囲は多岐にわたっており、深層学習への応用についての研究も行っています。
+        </p>
+      </div>
+      <p style="margin-top:16px;"><a href="research-intro.html">→ ランダム行列理論・多変量解析について詳しく見る（研究紹介）</a></p>
+    </section>
 
-   <h3>受賞歴</h3>
-    <ul>
-      <li>2023年：日本計算機統計学会 学会賞（論文賞）</li>
-      <li>2021年：応用統計学会 優秀発表賞</li>
-    </ul>
+    <section id="research">
+      <div class="eyebrow">02 &nbsp;Publications</div>
+      <h2 class="serif">研究業績</h2>
 
-  <h3>所属学会</h3>
-  <ul>
-    <li>日本計算機統計学会</li>
-    <li>応用統計学会</li>
-    <li>日本統計学会</li>
-    <li>人工知能学会</li>
-  </ul>
-</section>
+      <div class="filters" id="filters">
+        <button data-filter="all" class="active">すべて</button>
+        <button data-filter="refereed">論文（査読あり）</button>
+        <button data-filter="preprint">論文（査読なし）</button>
+        <button data-filter="talk">学会発表</button>
+      </div>
+      <input type="search" id="pubSearch" class="pub-search" placeholder="キーワードで研究業績を検索（著者名・誌名・年など）">
+      <p id="pubCount" class="pub-count"></p>
 
-<section id="contact">
-  <h2>連絡先</h2>
-  <p>Email: k-shimizu [at] rs.tus.ac.jp
-     <br><small>（[at] を @ に変えてご利用ください）</small></p>
-  <p>所属: 東京理科大学 理学部第一部 応用数学科<br>
-     住所: 東京都新宿区神楽坂1-3</p>
-</section>
+      <h3>論文（査読なし）</h3>
+      <ol class="pub-list" data-group="preprint">
+        <li data-type="preprint">Koki Shimizu, Toshiya Iwashita, Multivariate normality test based on the uniform distribution on the Stiefel manifold, <span class="venue">arXiv preprint</span>, 2026.</li>
+        <li data-type="preprint">Kohei Nishikawa, Koki Shimizu, Hiroki Hashiguchi, Evaluating Singular Value Thresholds for DNN Weight Matrices based on Random Matrix Theory, <span class="venue">arXiv preprint</span>, 2025.</li>
+        <li data-type="preprint">Koki Shimizu, Hiroki Hashiguchi, Exact Distribution of the Noncentral Complex Roy's Largest Root Statistic via Pieri's Formula, <span class="venue">arXiv preprint</span>, arXiv:2507.21508, 2025.</li>
+      </ol>
 
-  <footer>
-    &copy; 2025 Koki Shimizu
-  </footer>
+      <h3>論文（査読あり）</h3>
+      <ol class="pub-list" data-group="refereed">
+        <li data-type="refereed">Koki Shimizu, Hiroki Hashiguchi, Approximate distribution of eigenvalues of a generalized Wishart matrix under an extended Gaussian model, <span class="venue">Statistics and Probability Letters</span>, <b>227</b>, 120535, 2026.</li>
+        <li data-type="refereed">Manami Tsunoi, Manabu Takiguchi, Emi Ashida, Kazuki Harada, Keita Iyori, Koki Shimizu, Antiseptic Susceptibility Profiles of Canine Pyoderma-associated Staphylococci in Japan: First Identification of Plasmid-borne smr in <i>Staphylococcus coagulans</i>, <span class="venue">Frontiers in Veterinary Science</span>, section Veterinary Epidemiology and Economics, 12, 2025.</li>
+        <li data-type="refereed">Koki Shimizu, Hiroki Hashiguchi, Chi-Square Approximation for the Distribution of Individual Eigenvalues of a Singular Wishart Matrix, <span class="venue">Mathematics</span>, <b>12</b>(6), 921, 2024.</li>
+        <li data-type="refereed">Ryo Nasuda, Koki Shimizu, Hiroki Hashiguchi, Asymptotic behavior of the distributions of eigenvalues for beta-Wishart ensemble under the dispersed population eigenvalues, <span class="venue">Communications in Statistics – Theory and Methods</span>, <b>52</b>(22), 7840–7860, 2023.</li>
+        <li data-type="refereed">Koki Shimizu, Hiroki Hashiguchi, Numerical computation for the exact distribution of Roy's largest root statistic under linear alternative, <span class="venue">Japanese Journal of Statistics and Data Science</span>, <b>5</b>, 701–715, 2022.</li>
+        <li data-type="refereed">Aya Shinozaki, Koki Shimizu, Hiroki Hashiguchi, Generalized heterogeneous hypergeometric functions and the distribution of the largest eigenvalue of an elliptical Wishart matrix, <span class="venue">Random Matrices: Theory and Applications</span>, <b>11</b>(1), 2250034, 2022.</li>
+        <li data-type="refereed">Koki Shimizu, Hiroki Hashiguchi, Algorithm for the product of Jack polynomials and its application to the sphericity test, <span class="venue">Statistics & Probability Letters</span>, <b>187</b>, 109505, 2022.</li>
+        <li data-type="refereed">Koki Shimizu, Hiroki Hashiguchi, Expressing the largest eigenvalue of a singular beta F-matrix with heterogeneous hypergeometric functions, <span class="venue">Random Matrices: Theory and Applications</span>, <b>11</b>(1), 2250005, 2022.</li>
+        <li data-type="refereed">Koki Shimizu, Hiroki Hashiguchi, Heterogeneous hypergeometric functions with two matrix arguments and the exact distribution of the largest eigenvalue of a singular beta-Wishart matrix, <span class="venue">Journal of Multivariate Analysis</span>, <b>183</b>, 104714, 2021.</li>
+      </ol>
+
+      <h3>学会発表</h3>
+      <ol class="pub-list" data-group="talk">
+        <li data-type="talk">西川晃平, 清水康希, 橋口博樹, RMTに基づくTransformerベースモデルの重み行列の特異値解析（ポスター発表）, <span class="venue">2026年度 人工知能学会全国大会（第40回）</span>, Gメッセ群馬, 2026年6月8日</li>
+        <li data-type="talk">清水康希, 岩下登志也, Bernhard Klar, Stiefel多様体の極限定理に基づく単調欠測データに対する多変量正規性検定, <span class="venue">日本計算機統計学会第40回大会</span>, トーサイクラシックホール岩手, 2026年6月6日</li>
+        <li data-type="talk">小野友輔, 清水康希, 橋口博樹, β-MANOVA行列の最大・最小固有値の分布について, <span class="venue">日本計算機統計学会第40回大会</span>, トーサイクラシックホール岩手, 2026年6月5日</li>
+        <li data-type="talk">岩崎拓海, 清水康希, 橋口博樹, 球形検定におけるRoy統計量の精密分布とその検出力の数値実験について（英語発表）, <span class="venue">日本計算機統計学会第40回大会</span>, トーサイクラシックホール岩手, 2026年6月5日</li>
+        <li data-type="talk">石渡靖宏, 清水康希, 橋口博樹, 線形回帰に基づくカーネルランダム行列の固有値分布の推定とその応用, <span class="venue">2025年度 データサイエンス医療研究部門・統計科学研究部門 合同シンポジウム</span>, 東京理科大学神楽坂キャンパス, 2025年11月29日</li>
+        <li data-type="talk">大橋佑生, 清水康希, 橋口博樹, Single-cellのクラスタリングにおける第一主成分除去の効果, <span class="venue">2025年度 データサイエンス医療研究部門・統計科学研究部門 合同シンポジウム</span>, 東京理科大学神楽坂キャンパス, 2025年11月29日</li>
+        <li data-type="talk">西川晃平, 清水康希, 橋口博樹, ランダム行列理論に基づくTransformerベースモデルの圧縮, <span class="venue">2025年度 データサイエンス医療研究部門・統計科学研究部門 合同シンポジウム</span>, 東京理科大学神楽坂キャンパス, 2025年11月29日</li>
+        <li data-type="talk">西川晃平, 清水康希, 橋口博樹, ランダム行列理論によるTransformerベースモデルの軽量化, <span class="venue">日本計算機統計学会第39回シンポジウム</span>, 京都女子大学, 2025年11月8日</li>
+        <li data-type="talk">清水康希, 岩下登志也, Stiefel多様体上の一様分布に基づく多変量正規性検定（英語発表）, <span class="venue">日本計算機統計学会第39回シンポジウム</span>, 京都女子大学, 2025年11月8日</li>
+        <li data-type="talk">Takumi Iwasaki, Koki Shimizu, Hiroki Hashiguchi, On the exact distribution of the ratio of extreme eigenvalues in a white Wishart matrix, <span class="venue">Japan-Korea Joint Symposium of Statistics and Data Science 2025</span>, Tokyo University of Science, October 30, 2025</li>
+        <li data-type="talk">任欣穎, 清水康希, 橋口博樹, 行列変量混合正規分布のパラメータ推定について, <span class="venue">日本計算機統計学会 第39回大会</span>, 2025年6月13日</li>
+        <li data-type="talk">橋口博樹, 清水康希, 小野陽子, ゾーナル多項式の有限和で表現できる分布について, <span class="venue">日本計算機統計学会 第39回大会</span>, 2025年6月13日</li>
+        <li data-type="talk">大橋佑生, 清水康希, 橋口博樹, シングルセルデータのデトーニングを活用した次元削減, <span class="venue">日本計算機統計学会 第39回大会</span>, 2025年6月13日</li>
+        <li data-type="talk">西川晃平, 清水康希, 橋口博樹, ランダム行列理論に基づくDNN重み行列の低ランク近似に対する評価法の提案, <span class="venue">人工知能学会全国大会（第39回）</span>, 2025年5月27日〜30日</li>
+        <li data-type="talk">角井真名美, 滝口学, 芦田恵美, 伊從慶太, 清水康希, 消毒評価のための犬膿皮症由来ブドウ球菌のスクリーニングとqacC陽性 <i>Staphylococcus coagulans</i> の全ゲノム解析, <span class="venue">日本分子生物学会年会（第47回）</span>, 2024年11月29日</li>
+        <li data-type="talk">岩﨑拓海, 清水康希, 橋口博樹, 最大・最小固有値の比の正確分布とその数値計算, <span class="venue">日本計算機統計学会 第38回シンポジウム</span>, 2024年10月25日</li>
+        <li data-type="talk">西川晃平, 清水康希, 橋口博樹, 深層学習におけるランダム行列理論に基づく重み行列の低ランク近似の評価, <span class="venue">日本計算機統計学会 第38回シンポジウム</span>, 2024年10月25日</li>
+        <li data-type="talk">為我井優, 清水康希, 橋口博樹, ホワイトウィシャート行列の最小固有値分布のパフィアン表現, <span class="venue">日本計算機統計学会 第37回シンポジウム</span>, 2023年11月12日</li>
+        <li data-type="talk">堺翔太, 清水康希, 橋口博樹, 行列変量ラゲール多項式の数値計算について, <span class="venue">日本計算機統計学会 第37回シンポジウム</span>, 2023年11月12日</li>
+        <li data-type="talk">Koki Shimizu, Hiroki Hashiguchi, Distribution of eigenvalues of a singular elliptical Wishart matrix, <span class="venue">The 10th International Congress on Industrial and Applied Mathematics (ICIAM 2023)</span>, August 23, 2023</li>
+        <li data-type="talk">清水康希, 橋口博樹, 特異ウィシャート行列の固有値分布のカイ二乗近似, <span class="venue">日本計算機統計学会 第37回大会</span>, 2023年6月3日</li>
+        <li data-type="talk">清水康希, 橋口博樹, ゾーナル多項式の積計算とその統計的検定への応用について, <span class="venue">応用統計学会</span>, 2023年4月22日</li>
+        <li data-type="talk">清水康希, ジャック多項式計算の固有値分布論への応用, <span class="venue">神戸可積分セミナー</span>, 2023年1月26日</li>
+        <li data-type="talk">清水康希, 橋口博樹, 多変量分散分析における対立仮説のもとでのRoyの最大固有値統計量の正確分布, <span class="venue">日本計算機統計学会 第36回シンポジウム</span>, 2022年11月26日</li>
+        <li data-type="talk">清水康希, 橋口博樹, 特異ウィシャート行列の固有値の正確分布論, <span class="venue">科研費シンポジウム</span>, 2022年10月29日</li>
+        <li data-type="talk">清水康希, Distribution theory of eigenvalues for a singular beta-Wishart matrix, <span class="venue">第14回統計科学セミナー</span>, 2022年7月14日</li>
+        <li data-type="talk">Shimizu, K., Hashiguchi, H., Algorithm for product of zonal polynomials and its application in statistics, <span class="venue">IASC-ARS2022</span>, February 22, 2022</li>
+        <li data-type="talk">清水康希, 橋口博樹, 特異・非特異のウィシャート行列に関する最大固有値分布の統一的表現, <span class="venue">応用統計学会</span>, 2021年5月15日</li>
+        <li data-type="talk">清水康希, 行列変数の非斉次超幾何関数による固有値分布の導出とその数値計算, <span class="venue">確率・統計・行列ワークショップ 松本 2020</span>, 2020年12月4日</li>
+        <li data-type="talk">清水康希, 橋口博樹, 非斉次超幾何関数を用いた特異ベータウィシャート行列の固有値分布論とその応用, <span class="venue">統計関連連合大会</span>, 2020年9月9日</li>
+        <li data-type="talk">篠崎絢, 清水康希, 橋口博樹, 特異楕円ウィシャート行列の固有値の分布について, <span class="venue">日本計算機統計学会 第34回大会</span>, 2020年5月30日</li>
+        <li data-type="talk">那須田亮, 清水康希, 橋口博樹, Beta-Wishart ensembleにおける固有値のガンマ分布近似, <span class="venue">日本計算機統計学会 第33回シンポジウム</span>, 2019年11月30日</li>
+        <li data-type="talk">橋口博樹, 清水康希, 特異ベータウィシャート行列に関する固有値の分布論について, <span class="venue">統計数理研究所</span>, 2019年11月11日</li>
+        <li data-type="talk">Shimizu, Koki, Hashiguchi, Hiroki, Iwashita, Toshiya, Exact and approximate distributions of the largest eigenvalues of singular Wishart matrix, <span class="venue">DAGSTAT 2019</span>, March 18, 2019</li>
+        <li data-type="talk">清水康希, 橋口博樹, 岩下登志也, 特異ウィシャート行列の最大・最小固有値分布について, <span class="venue">科研費シンポジウム</span>, 2018年12月3日</li>
+        <li data-type="talk">Shimizu, Koki, Hashiguchi, Hiroki, Iwashita, Toshiya, Approximate distributions of eigenvalues of singular Wishart matrix, <span class="venue">Statistical Computing: Challenges and Opportunities in Data Science</span>, November 11, 2018</li>
+      </ol>
+    </section>
+
+    <section id="teaching">
+      <div class="eyebrow">03 &nbsp;Teaching</div>
+      <h2 class="serif">教育活動</h2>
+      <div class="grid-2">
+        <div class="card"><div class="tag">2025.09 – 2026.03</div><div class="title">情報統計学（日本女子大学）</div></div>
+        <div class="card"><div class="tag">2025.04 – 2025.09</div><div class="title">データ分析入門（専修大学）</div></div>
+        <div class="card"><div class="tag">2024.09 – 2025.03</div><div class="title">データサイエンス演習（流通経済大学）</div></div>
+        <div class="card"><div class="tag">2024.04 – 現在</div><div class="title">応用数学入門（東京理科大学）</div></div>
+        <div class="card"><div class="tag">2023.09 – 現在</div><div class="title">プログラミング基礎 2 及び演習（東京理科大学）</div></div>
+        <div class="card"><div class="tag">2023.09 – 現在</div><div class="title">線形代数 2 及び演習（東京理科大学）</div></div>
+        <div class="card"><div class="tag">2023.04 – 現在</div><div class="title">プログラミング基礎 1 及び演習（東京理科大学）</div></div>
+        <div class="card"><div class="tag">2023.04 – 現在</div><div class="title">線形代数 1 及び演習（東京理科大学）</div></div>
+      </div>
+    </section>
+
+    <section id="grants">
+      <div class="eyebrow">04 &nbsp;Grants</div>
+      <h2 class="serif">競争的資金</h2>
+      <ul class="grants-list">
+        <li>
+          <div class="g-title">高次元多変量解析における固有値分布論の展開</div>
+          <div class="g-meta">日本学術振興会 科学研究費助成事業 若手研究（2025年4月 – 2028年3月, 代表: 清水 康希）</div>
+        </li>
+        <li>
+          <div class="g-title">特異ランダム行列の固有値分布論の発展とその統計的応用</div>
+          <div class="g-meta">日本学術振興会 科学研究費助成事業 研究活動スタート支援（2023年8月 – 2025年3月, 代表: 清水 康希）</div>
+        </li>
+        <li>
+          <div class="g-title">多変量解析に関する特異ランダム行列の固有値分布論の新展開</div>
+          <div class="g-meta">日本学術振興会 科学研究費助成事業 特別研究員奨励費（2022年4月 – 2024年3月, 代表: 清水 康希）</div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="others">
+      <div class="eyebrow">05 &nbsp;More</div>
+      <h2 class="serif">その他</h2>
+
+      <h3>受賞歴</h3>
+      <ul class="awards-list">
+        <li><span class="year">2023</span><span>日本計算機統計学会 学会賞（論文賞）</span></li>
+        <li><span class="year">2021</span><span>応用統計学会 優秀発表賞</span></li>
+      </ul>
+
+      <h3>学会活動</h3>
+      <ul class="awards-list">
+        <li><span class="year">2024</span><span>統計関連学会連合 2024年度 統計関連学会連合大会 実行委員（2024年4月〜9月）</span></li>
+      </ul>
+
+      <h3>所属学会</h3>
+      <ul class="society-list">
+        <li>日本計算機統計学会</li>
+        <li>応用統計学会</li>
+        <li>日本統計学会</li>
+        <li>人工知能学会</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <div class="eyebrow">Contact</div>
+      <h2 class="serif">連絡先</h2>
+      <p>所属: 東京理科大学 理学部第一部 応用数学科<br>住所: 東京都新宿区神楽坂1-3</p>
+      <div class="email-pill" id="emailPill" title="クリックでメールアドレスをコピー">
+        k-shimizu [at] rs.tus.ac.jp
+      </div>
+      <p><small>（[at] を @ に変えてご利用ください）</small></p>
+    </section>
+
+  </main>
+
+  <footer>&copy; 2025 Koki Shimizu</footer>
+
+  <button id="toTop" aria-label="ページ上部へ戻る">↑</button>
+
+  <script src="script.js"></script>
 </body>
 </html>

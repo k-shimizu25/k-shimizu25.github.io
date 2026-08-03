@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>研究紹介 | 清水 康希 Koki Shimizu</title>
+<meta name="description" content="ランダム行列理論と多変量解析についての研究紹介。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="progress"></div>
+
+  <header class="hero hero--compact">
+    <div class="bg-photo"></div>
+    <div class="bg-overlay"></div>
+    <div class="hero-inner">
+      <a class="kicker" href="index.html">清水 康希 ／ Koki Shimizu</a>
+      <h1 class="serif">研究紹介</h1>
+    </div>
+  </header>
+
+  <nav class="subnav" id="subnav">
+    <a href="index.html#profile">プロフィール</a>
+    <a href="research-intro.html" class="active">研究紹介</a>
+    <a href="index.html#research">研究業績</a>
+    <a href="index.html#teaching">教育活動</a>
+    <a href="index.html#grants">競争的資金</a>
+    <a href="index.html#others">その他</a>
+    <a href="index.html#contact">連絡先</a>
+    <button id="themeToggle" aria-label="ダークモード切り替え">🌙</button>
+  </nav>
+
+  <main>
+    <section id="rmt">
+      <h3>ランダム行列理論</h3>
+      <div class="lead-card">
+        <p style="margin:0;">
+          ランダム行列理論は、「数理統計学」と「行列論」が融合する分野で、成分がランダムに定まる大きな行列の固有値がどのように分布するかを調べる理論です。清水は、特異・非特異のウィシャート行列や、その一般化にあたるbeta-Wishart行列・楕円ウィシャート行列などについて、ジャック多項式・ゾーナル多項式・超幾何関数を用いて固有値の正確分布・近似分布を導出する研究を行っています。
+        </p>
+        <p>
+          近年はこの理論を深層学習モデルの解析にも応用しています。DNNやTransformerの重み行列に対して、ランダム行列理論に基づく特異値のしきい値評価や低ランク近似の妥当性を検証する手法を、西川晃平氏・橋口博樹氏らと共同で研究しています。
+        </p>
+      </div>
+    </section>
+
+    <section id="multivariate">
+      <h3>多変量解析</h3>
+      <div class="lead-card">
+        <p style="margin:0;">
+          多変量解析は、複数の変数を同時に扱って関係性やパターンを明らかにする統計手法の総称で、多変量分散分析（MANOVA）・正準相関分析・主成分分析などが含まれます。清水は特に、遺伝子データのようにサンプルサイズよりも変数の数の方が大きい高次元データを対象に研究しています。
+        </p>
+        <p>
+          このようなデータには大標本漸近理論に基づく従来の統計手法を適用するのが難しいため、球状性検定やRoyの最大固有値統計量など、検定に使われる統計量の正確分布・近似分布を導出し、より精度の高い仮説検定を可能にする方法の開発に取り組んでいます。
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>&copy; 2025 Koki Shimizu</footer>
+
+  <button id="toTop" aria-label="ページ上部へ戻る">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
