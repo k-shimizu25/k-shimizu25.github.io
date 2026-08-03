@@ -252,6 +252,14 @@ h3 {
 }
 h3:first-of-type { margin-top: 0; }
 
+h4.sub-heading {
+  font-family: "Fraunces", serif;
+  font-size: 1.05em;
+  font-weight: 600;
+  color: var(--navy);
+  margin: 28px 0 14px;
+}
+
 p { color: var(--ink); }
 
 /* profile badges */
