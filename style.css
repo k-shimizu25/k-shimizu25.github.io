@@ -474,8 +474,8 @@ ol.pub-list[data-group="talk"]:not(.expanded) li:nth-child(n+6) { display: none;
 .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
 @media (max-width: 640px) {
   :root {
-    --bg-glow-1: rgba(0,70,173,0.38);
-    --bg-glow-3: rgba(214,32,52,0.34);
+    --bg-glow-1: rgba(0,70,173,0.28);
+    --bg-glow-3: rgba(214,32,52,0.24);
   }
 }
 
