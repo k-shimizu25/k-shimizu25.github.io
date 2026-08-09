@@ -45,16 +45,15 @@ body {
   font-family: "Inter", "Hiragino Sans", "Noto Sans JP", sans-serif;
   background-color: var(--cream);
   background-image:
-    linear-gradient(
-      90deg,
-      var(--bg-glow-1) 0%,
-      rgba(255,255,255,0) 32%,
-      rgba(255,255,255,0) 68%,
-      var(--bg-glow-3) 100%
-    );
+    radial-gradient(1000px 700px at 0% 12%, var(--bg-glow-1), transparent 65%),
+    radial-gradient(1000px 700px at 100% 12%, var(--bg-glow-3), transparent 65%),
+    radial-gradient(1000px 700px at 0% 50%, var(--bg-glow-1), transparent 65%),
+    radial-gradient(1000px 700px at 100% 50%, var(--bg-glow-3), transparent 65%),
+    radial-gradient(1000px 700px at 0% 88%, var(--bg-glow-1), transparent 65%),
+    radial-gradient(1000px 700px at 100% 88%, var(--bg-glow-3), transparent 65%);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-attachment: fixed;
+  background-attachment: scroll;
   color: var(--ink);
   line-height: 1.9;
   -webkit-font-smoothing: antialiased;
